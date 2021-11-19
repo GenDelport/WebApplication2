@@ -42,4 +42,3 @@ C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\Superv
 C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\Create_Project.cshtml.g.cs
 C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\Student_Dashboard.cshtml.g.cs
 C:\Users\Cloete\source\repos\WebApplication2\bin\Debug\net5.0\libman.json
-C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\Add_Task.cshtml.g.cs
