@@ -3,8 +3,14 @@
 @{
 }
 
+<head>
+    @*<script src="~/js/create.min.js"></script>*@
+    <link rel="stylesheet" href="~/css/student.css" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/student.js"></script>
+</head>
 <button type="button" class="btn btn-primary btn-lg">Update</button>
-
+<h2>Supervisors</h2>
 <div id="accordion">
     <div class="card">
         <div class="card-header" id="headingOne">
@@ -15,29 +21,47 @@
                 </button>
             </h5>
         </div>
-
+        
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
+                <h2>Progress:</h2>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="progress-bar"></div>
                 </div>
+                @*<div class="progress">
+            <div class="progress-bar"></div>
+        </div>*@
+                <h2>Files:</h2>
                 <h2>Tasks:</h2>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkMe()">
                     <label class="form-check-label" for="defaultCheck1">
-                        Project Proposal
+                        Adendum A
                     </label>
                 </div>
+
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" onclick="checkMe()">
                     <label class="form-check-label" for="defaultCheck2">
-                        Literature Study
+                        Adendum B
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" onclick="checkMe()">
                     <label class="form-check-label" for="defaultCheck3">
-                        Final Dissertation
+                        Adendum C
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" onclick="checkMe()">
+                    <label class="form-check-label" for="defaultCheck4">
+                        Adendum D
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" onclick="checkMe()">
+                    <label class="form-check-label" for="defaultCheck5">
+                        Adendum E
                     </label>
                 </div>
             </div>

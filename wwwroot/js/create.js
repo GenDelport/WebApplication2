@@ -22,6 +22,7 @@ function addCheckbox(name) {
     var inputs = container.find('input');
     var id = inputs.length + 1;
 
+    
 
     $('<input />', {
         type: 'checkbox',
