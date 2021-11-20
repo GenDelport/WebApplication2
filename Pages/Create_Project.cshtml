@@ -6,6 +6,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebApplication2</title>
+    <script src="~/js/create.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/create.js"></script>
+    <link rel="stylesheet" href="~/css/create.css" />
 </head>
 
 <div class="form">
@@ -13,10 +17,17 @@
         <label>Student Number: </label>
         <input type="text" /><br><br>
         <label>Insert Task: </label>
-        <input type="text" />
-        <button>Add</button>
+        <input type="text" id="checkBoxName" />
+        <input type="button" value="ok" id="btnSaveCheckBox" /><br><br>
+        <div id="cblist">
+       
+        </div>
+        <div id="progressbar"></div>
+        <div id="percentage"></div>
+        <br />
         <br><br>
-        <label>Type of Project: </label>
+
+        <label>Project Template: </label>
         <input type="file" /><br><br>
         <input class="btn btn-primary" type="submit" value="Submit"><br><br>
     </form>
