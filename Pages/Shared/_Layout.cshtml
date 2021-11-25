@@ -4,66 +4,65 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebApplication2</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    @*<link rel="stylesheet" href="~/css/navbar.css" />*@
-
-    @*<link href="~/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="~/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="sidebars.js"></script>*@
-
-    @*<link href="~/css/navbar.css" rel="stylesheet">
-
-    <script src="~/js/navbar.js"></script>*@
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="~/css/navbar.css" />
+    <link href="~/css/bootstrap/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Dashboard</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Create_Project">Create Project</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-page="/Index">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Create_Project">Create Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        @*<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            </nav>*@
+
+
+
+    </header>
+
+    <main>
+        <h1 class="visually-hidden">Sidebars examples</h1>
+
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
                 <span class="fs-4">Sidebar</span>
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
-                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home" /></svg>
-                        Home
+                    <a asp-area="" asp-page="/Student_Dashboard" class="nav-link active" aria-current="page">
+                        <svg class="bi me-2" width="16" height="16">@*<use xlink:href="#home" />*@</svg>
+                        Dashboard
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
-                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
-                        Dashboard
+                    <a asp-area="" asp-page="/Create_Project" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">@*<use xlink:href="#speedometer2" />*@</svg>
+                        Create Project
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-white">
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#table" /></svg>
-                        Orders
+                        Manual
                     </a>
                 </li>
-                <li>
+                @*<li>
                     <a href="#" class="nav-link text-white">
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
                         Products
@@ -74,13 +73,13 @@
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle" /></svg>
                         Customers
                     </a>
-                </li>
+                </li>*@
             </ul>
             <hr>
             <div class="dropdown">
                 <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="~/pngwing.com.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                    <strong>User</strong>
+                    <strong>mdo</strong>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
                     <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -90,28 +89,31 @@
                     <li><a class="dropdown-item" href="#">Sign out</a></li>
                 </ul>
             </div>
-        </div>*@
-       
+        </div>
 
+        <div class="b-example-divider"></div>
+        @RenderBody()
 
-    </header>
+    </main>
 
-    <div class="container">
+    @*<div class="container">
         <main role="main" class="pb-3">
+
+
 
             @RenderBody()
         </main>
-    </div>
+    </div>*@
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - WebApplication2 - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
+    @*<footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2021 - WebApplication2 - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            </div>
+        </footer>*@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/navbar.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

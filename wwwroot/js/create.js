@@ -115,8 +115,12 @@
 //}
 
 function Adds() {
+    var duedate = document.createElement('input');
+    duedate.setAttribute("class", "datelist");
+
     var checkbox = document.createElement('input');
     checkbox.setAttribute("class", "checkboxlist");
+
     var text = document.createElement('label');
     
 
@@ -124,12 +128,16 @@ function Adds() {
     var txtInput = document.getElementById('taskInput');
     var output = document.getElementById('output');
     checkbox.type = 'checkbox';
-
+    duedate.type = 'date';
+    
     text.innerText = txtInput.value;
     text.setAttribute("class", "labelist");
     output.appendChild(checkbox);
-    output.appendChild(document.createElement('br'));
+    
     output.appendChild(text);
+    output.appendChild(document.createElement('br'));
+    output.appendChild(duedate);
+    
 
     output.appendChild(document.createElement('br'));
 }
@@ -137,7 +145,7 @@ function Adds() {
 function delBoxes() {
     var boxes = document.getElementsByClassName('checkboxlist');
    
-  
+    var datesdue = document.getElementsByClassName('datelist');
 
     var texts = document.getElementsByClassName('labelist');
 
@@ -145,12 +153,11 @@ function delBoxes() {
     for (var i = 0; i < boxes.length; i++) {
         box = boxes[i];
         txt = texts[i];
+        dates = datesdue[i];
         if (box.checked) {
             box.parentNode.removeChild(box);
             txt.parentNode.removeChild(txt);
-            removeChild('br');
-            removeChild('br');
-
+            dates.parentNode.removeChild(dates);
         }
     }
 }

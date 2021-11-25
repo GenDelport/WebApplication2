@@ -5,12 +5,17 @@
 
 <head>
     @*<script src="~/js/create.min.js"></script>*@
-    <link rel="stylesheet" href="~/css/student.css" />
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/student.js"></script>
+    <link rel="stylesheet" href="~/css/student.css" />
 </head>
 <button type="button" class="btn btn-primary btn-lg">Update</button>
+<br>
+<br>
 <h2>Supervisors</h2>
+<br>
+<br>
 <div id="accordion">
     <div class="card">
         <div class="card-header" id="headingOne">
@@ -21,7 +26,7 @@
                 </button>
             </h5>
         </div>
-        
+
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
                 <h2>Progress:</h2>
@@ -29,8 +34,8 @@
                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="progress-bar"></div>
                 </div>
                 @*<div class="progress">
-            <div class="progress-bar"></div>
-        </div>*@
+                        <div class="progress-bar"></div>
+                    </div>*@
                 <h2>Given Files:</h2>
                 <h2>Upload Files:</h2>
                 <label>Choose file to upload </label>

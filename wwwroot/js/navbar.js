@@ -1,19 +1,8 @@
-﻿$(document).ready(function () {
-
-    function toggleSidebar() {
-        $(".button").toggleClass("active");
-        $("main").toggleClass("move-to-left");
-        $(".sidebar-item").toggleClass("active");
-    }
-
-    $(".button").on("click tap", function () {
-        toggleSidebar();
-    });
-
-    $(document).keyup(function (e) {
-        if (e.keyCode === 27) {
-            toggleSidebar();
-        }
-    });
-
-});
+﻿/* global bootstrap: false */
+(function () {
+    'use strict'
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+})()
