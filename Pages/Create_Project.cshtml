@@ -6,31 +6,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebApplication2</title>
-    <script src="~/js/create.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/js/create.js"></script>
-    <link rel="stylesheet" href="~/css/create.css" />
+    @*<script src="~/js/create.min.js"></script>*@
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/js/create.js"></script>
+        <link rel="stylesheet" href="~/css/create.css" />*@
+
+    <script src="~/js/create.js" asp-append-version="true"></script>
 </head>
-
-<div class="form">
-    <form method="post">
-        <label>Student Number: </label>
-        <input type="text" /><br><br>
-        <label>Insert Task: </label>
-        <input type="text" id="checkBoxName" />
-        <input type="button" value="ok" id="btnSaveCheckBox" /><br><br>
-        <div id="cblist">
-       
-        </div>
-            <div id="progressbar"></div>
-            <div id="percentage"></div>
-        <br />
-        <br><br>
-
-        <label>Project Template: </label>
-        <input type="file" /><br><br>
-        <input class="btn btn-primary" type="submit" value="Add"><br><br>
-    </form>
+<form method="post">
+    <label>Student Number: </label>
+    <input type="text" />
     <br>
     <br>
-</div>
+    <label>Insert Task: </label>
+    <input type="text" id="taskInput" />
+    <input type="button" value="Add" onclick="Adds()">
+    <input type="button" value="Delete" onclick="delBoxes()" />
+    <br>
+    <br>
+    <div id="output"></div>
+</form>
