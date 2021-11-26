@@ -6,7 +6,7 @@
     <title>@ViewData["Title"] - WebApplication2</title>
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link rel="stylesheet" href="~/css/navbar.css" />
-    <link href="~/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/bootstrap/bootstrap.min.css" rel="stylesheet" asp-append-version="true">
 </head>
 <body>
     <header>
@@ -40,23 +40,23 @@
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
             <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
-                <span class="fs-4">Sidebar</span>
+                <span class="fs-4">Welcome</span>
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a asp-area="" asp-page="/Student_Dashboard" class="nav-link active" aria-current="page">
+                    <a asp-area="" asp-page="/Student_Dashboard" class="nav-link text-white" >
                         <svg class="bi me-2" width="16" height="16">@*<use xlink:href="#home" />*@</svg>
                         Dashboard
                     </a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a asp-area="" asp-page="/Create_Project" class="nav-link text-white">
                         <svg class="bi me-2" width="16" height="16">@*<use xlink:href="#speedometer2" />*@</svg>
                         Create Project
                     </a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="#" class="nav-link text-white">
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#table" /></svg>
                         Manual

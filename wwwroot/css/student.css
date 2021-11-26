@@ -27,3 +27,7 @@ body {
 .btn{
     height: 50px;
 }
+
+#accordion {
+    width: 100%;
+}

@@ -97,3 +97,7 @@ main {
 .lh-tight {
     line-height: 1.25;
 }
+
+.nav-item a:hover {
+    background-color: blue !important;
+}

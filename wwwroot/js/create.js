@@ -122,8 +122,8 @@ function Adds() {
     checkbox.setAttribute("class", "checkboxlist");
 
     var text = document.createElement('label');
-    
-
+    var dividers = document.createElement('br');
+    dividers.setAttribute("class", "breaks");
 
     var txtInput = document.getElementById('taskInput');
     var output = document.getElementById('output');
@@ -131,15 +131,19 @@ function Adds() {
     duedate.type = 'date';
     
     text.innerText = txtInput.value;
+    output.appendChild(dividers);
     text.setAttribute("class", "labelist");
+    
     output.appendChild(checkbox);
     
     output.appendChild(text);
-    output.appendChild(document.createElement('br'));
+    
     output.appendChild(duedate);
+    output.appendChild(dividers);
     
 
-    output.appendChild(document.createElement('br'));
+    
+
 }
 
 function delBoxes() {
@@ -149,15 +153,18 @@ function delBoxes() {
 
     var texts = document.getElementsByClassName('labelist');
 
+    var dividers = document.getElementsByClassName('breaks');
    
     for (var i = 0; i < boxes.length; i++) {
         box = boxes[i];
         txt = texts[i];
         dates = datesdue[i];
+        divide = dividers[i];
         if (box.checked) {
             box.parentNode.removeChild(box);
             txt.parentNode.removeChild(txt);
             dates.parentNode.removeChild(dates);
+            divide.parentNode.removeChild(divide);
         }
     }
 }
