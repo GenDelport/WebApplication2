@@ -1,0 +1,21 @@
+﻿@page
+@model WebApplication2.Pages.Progress_ReportModel
+@{
+}
+
+
+<form method="post">
+    <label>Student Number: </label>
+    <input type="text" />
+    <br>
+    <br>
+    <input class="btn btn-primary" type="submit" value="Show Report">
+</form>
+
+<div class="show">
+    <label>Report For: </label>
+</div>
+
+
+<iframe src="/Reports/5138415231217785189-Progress-Report.pdf" width="100%" height="500px">
+</iframe>

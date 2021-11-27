@@ -44,4 +44,7 @@ C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\Studen
 C:\Users\Cloete\source\repos\WebApplication2\bin\Debug\net5.0\libman.json
 C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\Todo.cshtml.g.cs
 C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\navbars.cshtml.g.cs
-C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\Profile.cshtml.g.cs
+C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\Profile_Student.cshtml.g.cs
+C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\Profile_Supervisor.cshtml.g.cs
+C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\Progress_Report.cshtml.g.cs
+C:\Users\Cloete\source\repos\WebApplication2\obj\Debug\net5.0\Razor\Pages\Examiner.cshtml.g.cs

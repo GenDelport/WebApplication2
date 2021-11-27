@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\css\bootstrap\" />
+    <Folder Include="wwwroot\Reports\" />
   </ItemGroup>
 
 </Project>
