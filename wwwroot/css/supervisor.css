@@ -3,10 +3,11 @@
 
 .btn {
     height: 50px;
+    display:grid;
 }
 
 .wrapper {
-    display: block !important;
+    display: grid !important;
 }
 
 #accordion {
