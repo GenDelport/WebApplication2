@@ -1,4 +1,4 @@
-﻿body {
+﻿/*body {
 }
 
 
@@ -9,4 +9,47 @@
 #percentage{
     color:black;
     background-color:black;
+}
+*/
+
+body {
+    background-color: #cdcdcd;
+}
+
+.bgcolor {
+    background-color: #dcdcdc;
+}
+
+.txtbg {
+    background-color: #F5F5F5;
+}
+
+.border {
+    border-radius: 15px;
+    border: 2px solid #808080;
+    padding: 17.5px;
+    width: 200px;
+    height: 25px;
+}
+
+.borderProfile {
+    border-radius: 15px;
+    border: 2px solid #808080;
+    padding: 17.5px;
+    height: 25px;
+}
+
+.margin {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+#progressbar {
+    color: black;
+    background-color: black;
+}
+
+#percentage {
+    color: black;
+    background-color: black;
 }

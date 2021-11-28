@@ -6,58 +6,77 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebApplication2</title>
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/js/examiner.js" asp-append-version="true"></script>
+
+
     @*<script src="~/js/create.min.js"></script>*@
     @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/js/create.js"></script>
         <link rel="stylesheet" href="~/css/create.css" />*@
 
+    <link rel="stylesheet" href="~/css/create.css" />
+
     <script src="~/js/create.js" asp-append-version="true"></script>
+
+
 </head>
-<form method="post">
-    <label>Student Number: </label>
-    <input type="text" />
-    <br>
-    <br>
 
-    <label>Select Document to Add: </label>
-    <div class="form-check" id="form-check-form">
+<div class="margin">
+    <form method="post">
+        <label>Student Number: </label>
+        <input type="text" class="txtbg border" />
+        <br>
+        <br>
 
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkMe()">
-        <label class="form-check-label" for="defaultCheck1">
-            Etchical Clearance
-        </label>
-    </div>
+        <label>Select Document to Add: </label>
+        <div class="form-check" id="form-check-form">
 
-    <div class="form-check" id="form-check-form">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkMe()">
+            <label class="form-check-label" for="defaultCheck1">
+                Etchical Clearance
+            </label>
+        </div>
 
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkMe()">
-        <label class="form-check-label" for="defaultCheck1">
-            Decleration Document
-        </label>
-    </div>
+        <div class="form-check" id="form-check-form">
 
-    <div class="form-check" id="form-check-form">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkMe()">
+            <label class="form-check-label" for="defaultCheck1">
+                Decleration Document
+            </label>
+        </div>
 
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkMe()">
-        <label class="form-check-label" for="defaultCheck1">
-            Research Proposal
-        </label>
-    </div>
+        <div class="form-check" id="form-check-form">
 
-    <br>
-    <br>
-    <label>Appoint Examiner: </label>
-    <input class="btn btn-primary" type="submit" value="Add" asp-area="" asp-page="/Examiner">
-    <br>
-    <br>
-    <label>Insert Task: </label>
-    <input type="text" id="taskInput" />
-    <input type="button" value="Add" onclick="Adds()">
-    <input type="button" value="Delete" onclick="delBoxes()" />
-    <br>
-    <br>
-    <div id="output"></div>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="checkMe()">
+            <label class="form-check-label" for="defaultCheck1">
+                Research Proposal
+            </label>
+        </div>
 
-    <input class="btn btn-primary" type="submit" value="Submit" asp-area="" asp-page="/Supervisor_Dashboard">
-</form>
+        <br>
+        <br>
+        <label>Appoint Examiner: </label>
+        <input class="btn btn-primary" type="submit" value="Add" asp-area="" asp-page="/Examiner">
+        <br>
+        <br>
+        <div id="output">
+
+        </div>
+
+        <br>
+        <br>
+        <label>Insert Task: </label>
+        <input type="text" class="txtbg border" id="taskInput" />
+        <input type="button" value="Add" onclick="Adds()">
+        <input type="button" value="Delete" onclick="delBoxes()" />
+        <br>
+        <br>
+        <div id="output"></div>
+
+        <input class="btn btn-primary" type="submit" value="Submit" asp-area="" asp-page="/Supervisor_Dashboard">
+    </form>
+</div>
